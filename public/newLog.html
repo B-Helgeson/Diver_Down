@@ -6,11 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Diver Down</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
+  <!-- Floating Action Button and SideNav Menu -->
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="assets/img/bubbles.jpg">
+      </div>
+      <a href="#user"><img src="assets/img/user-default.png" style="max-height:200px;"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!">View Log Book</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Menu</a></li>
+    <li><a class="waves-effect" href="#!">Add a Dive Log</a></li>
+    <li><a href="#!"><i class="material-icons">person</i>Edit Profile</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large waves-effect waves-light red"><i class="material-icons">menu</i></a>
 
+
+
+
+
+    <div class="container newLog #e3f2fd blue lighten-5 z-depth-3">
+        <div>
+            <h4>New Dive Log</h4>
+        </div>
+        <div class="input-field">
+            <input placeholder="Placeholder" id="dive_title" type="text" class="validate">
+            <label for="dive_title">Dive Title</label>
+        </div>
+        <div class="input-field">
+            <input placeholder="StartDate" type="text" class="datepicker">
+            <input placeholder="StartTime" type="text" class="timepicker">
+        </div>
+        <ul class="collapsible">
+                <li class="active">
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Important Details</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons"></i>Dive Conditions</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Social Info</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+
+    </div> <!-- Main Container -->
 
 
 
