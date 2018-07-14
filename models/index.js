@@ -1,3 +1,4 @@
 module.exports = {
-  Book: require("./book")
+  Log: require("./log"),
+  Diver: require("./diver")
 };
