@@ -3,6 +3,8 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
+// Update this file to insert divers, certifications, buddies, and dive logs!!
+
 mongoose.connect(
   process.env.MONGODB_URI ||
   "mongodb://localhost/reactreadinglist"
