@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const booksController = require("../../controllers/booksController");
+const diversController = require("../../controllers/diversController");
 
 // Matches with "/api/books"
 router.route("/")
@@ -12,6 +12,9 @@ router
   .get(diversController.findById)
   .put(diversController.update)
   .delete(diversController.remove);
+
+
+  /* Section below to be updated to match the desired calls/requests
 
   // Routes
   app.get("/divers", function(req,res) {
@@ -76,5 +79,7 @@ app.post("/articles/:id", function(req, res) {
       res.json(err);
     });
 });
+
+*/
 
 module.exports = router;

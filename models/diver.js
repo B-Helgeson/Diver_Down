@@ -14,7 +14,7 @@ const diverSchema = new Schema({
     certDate: { type: Date, default: Date.now },
     certAgency: String,
     certNumber: String, 
-    certPicture: ImageData, 
+    certPicture: String, 
     certInstructor: { type: String, required: false }
     }],
     // The section below should associate the diver to his/her logs
