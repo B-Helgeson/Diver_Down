@@ -1,4 +1,5 @@
 module.exports = {
-  Log: require("./log"),
-  Diver: require("./diver")
+  Diver: require("./diver"),
+  Cert: require("./cert"),
+  Log: require("./log")
 };

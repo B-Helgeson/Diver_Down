@@ -2,31 +2,27 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const diverSchema = new Schema({
-  firstName: { type: String, required: true },
-  lastName: { type: String, required: true },
+  userName: {type: String, required: true},
+  password: {type: String, requried: true},
+  firstName: { type: String, required: false },
+  lastName: { type: String, required: false },
   email: {
     type: String,
+    required: true,
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
       },
   dateCreated: { type: Date, default: Date.now },
-  certifications: [{
-    certTitle: String, 
-    certDate: { type: Date, default: Date.now },
-    certAgency: String,
-    certNumber: String, 
-    certPicture: String, 
-    certInstructor: { type: String, required: false }
+  certs: [{
+    type: Schema.Types.ObjectId,
+    ref: "Cert"
     }],
-    // The section below should associate the diver to his/her logs
   logs: [{
     type: Schema.Types.ObjectId,
     ref: "Log"
     }],
-    // The section below should associate the diver to his/her dive buddies
-  buddies: [{
-      type: Schema.Types.ObjectId,
-      ref: "Diver"
-    }]
+  buddies: {
+    type: String,
+    }
 });
 
 const Diver = mongoose.model("Diver", diverSchema);

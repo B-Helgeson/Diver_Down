@@ -12,11 +12,13 @@ mongoose.connect(
 
 const diverSeed = [
   {
+    userName: "BHdiver12",
+    password: "thebest12",
     firstName: "Brandon",
     lastName: "Helgeson",
     email: "brandon.helgeson@mail.com",
     dateCreated: new Date(Date.now()),
-    certifications: [{
+    certs: [{
       certTitle: "Open Water Diver", 
       certDate: new Date(Date.now()),
       certAgency: "NAUI",
@@ -39,11 +41,13 @@ const diverSeed = [
     buddies: {}
   },
   {
+    userName: "sddiver14",
+    password: "thebest14",
     firstName: "Samantha",
     lastName: "Dawson",
     email: "Samantha.helgeson@mail.com",
     dateCreated: new Date(Date.now()),
-    certifications: [{
+    certs: [{
       certTitle: "Open Water Diver", 
       certDate: new Date(Date.now()),
       certAgency: "NAUI",

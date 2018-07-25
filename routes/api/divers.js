@@ -1,12 +1,12 @@
 const router = require("express").Router();
 const diversController = require("../../controllers/diversController");
 
-// Matches with "/api/dives"
+// Matches with "/api/divers"
 router.route("/")
   .get(diversController.findAll)
   .post(diversController.create);
 
-// Matches with "/api/dives/:id"
+// Matches with "/api/divers/:id"
 router
   .route("/:id")
   .get(diversController.findById)

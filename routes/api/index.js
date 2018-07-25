@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const diveRoutes = require("./dives");
+const diveRoutes = require("./divers");
 
-// Dive routes
-router.use("/dives", diveRoutes);
+// available routes
+router.use("/divers", diveRoutes);
 
 module.exports = router;
