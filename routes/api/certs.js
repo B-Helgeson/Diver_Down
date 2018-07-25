@@ -3,7 +3,7 @@ const certsController = require("../../controllers/certsController");
 
 // Matches with "/api/certs"
 router.route("/")
-  .get(certsController.findAll)
+  .get(certsController.findAllDiversCerts)
   .post(certsController.create);
 
 // Matches with "/api/certs/:id"
