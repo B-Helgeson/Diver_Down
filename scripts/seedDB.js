@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
-
-// Update this file to insert divers, certifications, buddies, and dive logs!!
+// Update this file to also create dive logs and dive certifications
 
 mongoose.connect(
   process.env.MONGODB_URI ||
