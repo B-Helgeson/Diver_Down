@@ -1,4 +1,4 @@
-.index { 
+.login { 
     background: url("../img/login2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,6 +6,6 @@
     background-size: cover;
   }
 
-  .index.content {
+  .login.content {
     background: transparent; 
   }
