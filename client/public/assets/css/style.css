@@ -75,3 +75,7 @@
   .mainPageBtn {
     padding: 10px;
   }
+
+  .cd1 {
+    background: url("../img/sampeldive1.jpg") no-repeat center center fixed; 
+  }
