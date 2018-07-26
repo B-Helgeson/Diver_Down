@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Nav = () => (
   <div>
@@ -13,13 +14,13 @@ const Nav = () => (
               <a href="#email"><span className="white-text email navOverlay">bshelgeson@gmail.com</span></a>
             </div></li>
           <li><a className="waves-effect" href="/log">Add a Dive Log</a></li>
-          <li><a href="/profile">View My Log Book</a></li>
+          <li><Link to="/profile">View My Log Book</Link></li>
           <li><div className="divider" /></li>
           <li><a className="subheader">Menu</a></li>
-          <li><a href="/login">Home</a></li>
-          <li><a href="/social">Social Page</a></li>
-          <li><a href="/acct"><i className="material-icons">person</i>Edit Profile</a></li>
-          <li><a href="/cert"><i className="material-icons">contact_mail</i>Edit Certifications</a></li>
+          <li><Link to="/login">Home</Link></li>
+          <li><Link to="/social">Social Page</Link></li>
+          <li><Link to="/acct"><i className="material-icons">person</i>Edit Profile</Link></li>
+          <li><Link to="/cert"><i className="material-icons">contact_mail</i>Edit Certifications</Link></li>
         </ul>
         <a href="111" data-target="slide-out" className="sidenav-trigger btn-floating btn-large waves-effect waves-light blue"><i className="material-icons">menu</i></a>
   </div>
