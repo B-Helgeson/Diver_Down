@@ -5,6 +5,7 @@ $(document).ready( ()=> {
 
     // Enable the sidenav, for the main menu
     $('.sidenav').sidenav();
+    $('.navLink').sidenav();
 
     // Enable the collabsable, for the UI Form
     $('.collapsible').collapsible();

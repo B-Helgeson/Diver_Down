@@ -64,3 +64,13 @@
   h4 {
     text-align:center;
   }
+
+  .welcomeInfo {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .mainPageBtn {
+    padding: 10px;
+  }
