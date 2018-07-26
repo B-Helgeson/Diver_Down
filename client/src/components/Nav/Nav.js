@@ -8,9 +8,9 @@ const Nav = () => (
               <div className="background">
                 <img src="assets/img/bubbles.jpg" alt="bubbles"/>
               </div>
-              <a href="#user"><img src="assets/img/user-default.png" alt="default" style={{maxHeight: 200}} /></a>
-              <a href="#name"><span className="white-text name navOverlay">John Doe</span></a>
-              <a href="#email"><span className="white-text email navOverlay">jdandturk@gmail.com</span></a>
+              <a href="#user"><img src="assets/img/BrandonProfile.JPG" alt="default" style={{maxHeight: 200}} /></a>
+              <a href="#name"><span className="white-text name navOverlay">Brandon Helgeson</span></a>
+              <a href="#email"><span className="white-text email navOverlay">bshelgeson@gmail.com</span></a>
             </div></li>
           <li><a className="waves-effect" href="/log">Add a Dive Log</a></li>
           <li><a href="/profile">View My Log Book</a></li>
