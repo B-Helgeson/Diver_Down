@@ -11,6 +11,7 @@ class newLog extends Component {
 render() {
     return (
         <div className="container newLog #e3f2fd blue lighten-5 z-depth-3">
+        <h2>Create Edit Account</h2>
           <div className="top row">
             <div>
               <h4 style={{textAlign: 'center', backgroundColor: 'white'}}>New Dive Log</h4>
