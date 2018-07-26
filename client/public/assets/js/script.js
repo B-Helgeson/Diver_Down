@@ -16,6 +16,9 @@ $(document).ready( ()=> {
     // Enable Chips for Equipment Input
     $('.chips').chips();
 
+    // Enable dropdown for formSelect
+    $('select').formSelect();
+
     // Dynamically populate the end date and end time
     $('#startDate').change( ()=> {
         let defaultDate = $('#startDate').val();
@@ -51,6 +54,8 @@ $(document).ready( ()=> {
                 $('#visCalc').text("Excellent")
                 break;
         }
+
+    
 
 
 

@@ -10,11 +10,11 @@ class newLog extends Component {
 
 render() {
     return (
-        <div className="container newLog #e3f2fd blue lighten-5 z-depth-3">
-        <h2>New Edit Log Page</h2>
+      <div className="LogMainContainer header">
+        <div className="container newLog z-depth-3">
           <div className="top row">
             <div>
-              <h4 style={{textAlign: 'center', backgroundColor: 'white'}}>New Dive Log</h4>
+              <h4 className="logHeaders">New Dive Log</h4>
             </div>
             <div className="col s6">
               <div className="input-field">
@@ -39,33 +39,52 @@ render() {
           </div>
           <ul className="collapsible">
             <li className="active">
-              <div className="collapsible-header"><i className="material-icons">assignment</i>Technical Details</div>
+              <div className="collapsible-header logHeaders"><i className="material-icons">assignment</i>Technical Details</div>
               <div className="collapsible-body row">
                 <div className="col s3">
                   <strong>Pressure</strong>
                   <div className="input-field">
                     <input placeholder={3200} id="startPressure" type="number" className="validate" />
-                    <label htmlFor="startPressure">Start Pressure</label>
+                    <label htmlFor="startPressure">Start PSI</label>
                   </div>
                   <div className="input-field">
                     <input placeholder={1100} id="endPressure" type="number" className="validate" />
-                    <label htmlFor="endPressure">End Pressure</label>
+                    <label htmlFor="endPressure">End PSI</label>
                   </div>
                   <div className="input-field">
                     <input disabled defaultValue={2100} id="airConsumption" type="number" className="validate" />
-                    <label htmlFor="airConsumption">Consumption</label>
+                    <label htmlFor="airConsumption">Air Consumption</label>
                   </div>
                 </div>
                 <div className="col s3">
-                  Depth
+                <strong>Max Depth</strong>
+                  <div className="input-field">
+                    <input placeholder={30} id="maxDepth" type="number" className="validate" />
+                    <label htmlFor="maxDepth">feet</label>
+                  </div>
+                  <strong>Safety Stop</strong>
+                  <div className="input-field">
+                    <div className="switch">
+                    <label>
+                        no
+                        <input type="checkbox" className="safetyStop"></input>
+                        <span className="lever"></span>
+                        yes
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <div className="col s3">
-                  Water Temp, SAC
+                  <strong>Water Temp</strong>
+                    <div className="input-field">
+                      <input placeholder={10} id="waterTemp" type="number" className="validate" />
+                      <label htmlFor="waterTemp">°F</label>
+                    </div>
                 </div>
               </div>
             </li>
             <li>
-              <div className="collapsible-header"><i className="material-icons">filter_drama</i>Dive Conditions</div>
+              <div className="collapsible-header logHeaders"><i className="material-icons">filter_drama</i>Dive Conditions</div>
               <div className="collapsible-body row">
                 <div className="col s3">
                   <div className="row">
@@ -101,14 +120,26 @@ render() {
                   </div>
                   <div className="row">
                     <strong>Weather</strong>
+                    <div className="input-field">
+                      <select class="icons">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Clear">Clear</option>
+                        <option value="Rainy">Rainy</option>
+                        <option value="Cold">Cold</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
                 <div className="col s3">
                   <div className="row">
-                    Weight
+                    <strong>Weight Used</strong>
+                    <div className="input-field">
+                      <input placeholder={10} id="weightUsed" type="number" className="validate" />
+                      <label htmlFor="weightUsed">lbs</label>
+                    </div>
                   </div>
                   <div className="row">
-                    Equipment
+                  <strong>Equipment Used</strong>
                     <div className="chips input-field">
                       <input className="input equipment" />
                     </div>
@@ -117,9 +148,34 @@ render() {
               </div>
             </li>
             <li>
-              <div className="collapsible-header"><i className="material-icons">people</i>Social Info</div>
+              <div className="collapsible-header logHeaders"><i className="material-icons">people</i>Social Info</div>
               <div className="collapsible-body">
-                <span>Instructor/DM, Dive Buddies, Notes, Pictures</span>
+                <div className="col s3">
+                  <div className="row">
+                  <strong>Instructor / Dive Master</strong>
+                    <div className="chips input-field">
+                      <input className="input equipment" />
+                    </div>
+                  </div>
+                  <div className="row">
+                  <strong>Dive Buddies</strong>
+                    <div className="chips input-field">
+                      <input className="input equipment" />
+                    </div>
+                  </div>
+                </div>
+                <strong>Dive Notes / Comments</strong>
+                <div class="row">
+                  <form>
+                    <div class="row">
+                      <div class="input-field">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Textarea</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <strong>Upload Pictures</strong>
                 <form action="#">
                   <div className="file-field input-field">
                     <div className="btn">
@@ -135,6 +191,7 @@ render() {
             </li>
           </ul>
         </div>
+      </div>
     );
   }}
 

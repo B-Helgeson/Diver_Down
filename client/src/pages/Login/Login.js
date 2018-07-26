@@ -10,7 +10,9 @@ class newLog extends Component {
 
 render() {
     return (
-      <div className="row login">
+    <div className="login">
+    <div className="login-content">
+      <div className="row login-elem">
       <form className="col s12">
         <div className="row">
           <div className="input-field col s6">
@@ -52,6 +54,8 @@ render() {
         </div>
       </form>
     </div>
+    </div>
+  </div>
     );
   }}
 
