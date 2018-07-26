@@ -190,6 +190,11 @@ render() {
               </div>
             </li>
           </ul>
+            <div className="logInputBtn">
+              <button className="btn waves-effect waves-light" type="submit" name="action">Save
+                <i className="material-icons right">send</i>
+              </button>
+            </div>
         </div>
       </div>
     );

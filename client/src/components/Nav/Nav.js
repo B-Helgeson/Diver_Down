@@ -15,7 +15,8 @@ const Nav = () => (
           <li><a href="#!">View Log Book</a></li>
           <li><div className="divider" /></li>
           <li><a className="subheader">Menu</a></li>
-          <li><a className="waves-effect" href="#!">Add a Dive Log</a></li>
+          <li>
+            <a className="waves-effect" href="#!">Add a Dive Log</a></li>
           <li><a href="#!"><i className="material-icons">person</i>Edit Profile</a></li>
         </ul>
         <a href="111" data-target="slide-out" className="sidenav-trigger btn-floating btn-large waves-effect waves-light blue"><i className="material-icons">menu</i></a>
