@@ -77,7 +77,7 @@ render() {
                 <div className="col s3">
                   <strong>Water Temp</strong>
                     <div className="input-field">
-                      <input placeholder={10} id="waterTemp" type="number" className="validate" />
+                      <input placeholder={75} id="waterTemp" type="number" className="validate" />
                       <label htmlFor="waterTemp">°F</label>
                     </div>
                 </div>
@@ -93,16 +93,16 @@ render() {
                       <p className="range-field">
                         <input type="range" id="visVal" min={5} max={100} />
                       </p>
-                      <span id="visCalc">good</span>
+                      <span id="visCalc">Good</span>
                     </form>
                   </div>
                   <div className="row">
                     <strong>Current</strong>
                     <form action="#">
                       <p className="range-field">
-                        <input type="range" id="CurrVal" min={5} max={100} />
+                        <input type="range" id="currVal" min={5} max={100} />
                       </p>
-                      <span id="CurrCalc">good</span>
+                      <span id="currCalc">Mild</span>
                     </form>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ render() {
                     <div class="row">
                       <div class="input-field">
                         <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Textarea</label>
+                        <label for="textarea1">Describe your dive</label>
                       </div>
                     </div>
                   </form>

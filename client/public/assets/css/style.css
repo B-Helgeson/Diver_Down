@@ -47,12 +47,13 @@
 
   .logHeaders {
     background-color: #aeb5c1;
-    opacity: 100;
+    opacity: 0.9;
   }
 
   .newLog {
-    background-color: rgb(212, 206, 206);
-    opacity: 0.9;
+    /* background-color: rgb(212, 206, 206); */
+    opacity: 0.9; 
+    background-color: white;
   }
 
   .logInputBtn {

@@ -51,11 +51,33 @@ $(document).ready( ()=> {
             case (visVal > 20 && visVal < 50):
                 $('#visCalc').text("Moderate")
                 break;
-            case (visVal > 50):
+            case (visVal > 50 && visVal < 70):
+                $('#visCalc').text("Good")
+                break;
+            case (visVal > 70):
                 $('#visCalc').text("Excellent")
                 break;
         }
+    })
 
+    // Calculate the current rating value for the front end
+    $('#currVal').change( ()=> {
+        let visVal = $('#currVal').val();
+        switch(true) {
+            case (visVal < 20): 
+                $('#currCalc').text("Smooth")
+                break;
+            case (visVal > 20 && visVal < 50):
+                $('#currCalc').text("Mild")
+                break;
+            case (visVal > 50 && visVal < 85):
+                $('#currCalc').text("Strong")
+                break;
+            case (visVal > 85):
+                $('#currCalc').text("Dangerous")
+                break;
+        }
+    })
     
 
 
@@ -124,5 +146,3 @@ $(document).ready( ()=> {
 
 
 
-
-});
